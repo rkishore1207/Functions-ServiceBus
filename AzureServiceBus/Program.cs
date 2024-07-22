@@ -5,12 +5,12 @@ namespace AzureServiceBus
     internal class Program
     {
         private static string? ServiceBusConnectionString = Environment.GetEnvironmentVariable("SERVICEBUS_CONNECTION_STRING");
-        private static string? QueueName = "message-queue";
+        private static string? TopicName = "initial-topic";
         private static int maxNumberOfMessages = 4;
         public static async Task ServiceBus()
         {
             ServiceBusClient client = new ServiceBusClient(ServiceBusConnectionString);
-            ServiceBusSender sender = client.CreateSender(QueueName);
+            ServiceBusSender sender = client.CreateSender(TopicName);
 
             using ServiceBusMessageBatch batch = await sender.CreateMessageBatchAsync();
             for(int i = 1; i <= maxNumberOfMessages; i++)

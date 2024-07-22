@@ -8,6 +8,20 @@
 
 AzureServiceBus/.vs/*
 
+Azure-Functions/.vscode/extensions.json
+Azure-Functions/.vscode/launch.json
+Azure-Functions/.vscode/settings.json
+Azure-Functions/.vscode/tasks.json
+
+__azurite_db_blob__.json
+__azurite_db_blob_extent__.json
+__azurite_db_queue__.json
+__azurite_db_queue_extent__.json
+__azurite_db_table__.json
+__blobstorage__/0de88641-ca92-4526-89c4-66fbe5765932
+__blobstorage__/1dbd2d77-1a7d-480a-96c6-e02cfe1c102f
+__queuestorage__/26cef0ab-e39f-42b0-82b2-ee8b46f17da4
+
 # User-specific files
 *.rsuser
 *.suo
